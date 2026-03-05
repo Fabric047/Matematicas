@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kriptobyte: Física</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="icon" href="Galería/principal/Logo_Windows.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <script>
+        const open_modal = document.querySelector("#open_modal");
+        const closed_modal = document.querySelector("#closed_modal");
+        const modal = document.querySelector("#modal");
+
+        open_modal.addEventListener("click",()=>{
+            modal.showModal();
+        })
+
+        closed_modal.addEventListener("click",()=>{
+            modal.close();
+        })
+
+    </script>
+
+
+
+    <div class="clas_1">
+
+        <div>
+            <a href="main.html"><img class="logo" src="Galería/principal/Logo.png" width="250", height="40"></a>
+        </div>
+        <ul class="menu">
+
+            <li class="li_"><a class="li_" href="algebra.html">ÁLGEBRA</a>
+                <ul>
+                </ul>
+            </li>
+            
+            <li class="li_"><a class="li_" href="Geometria.html">GEOMETRÍA</a>
+                <ul>
+                </ul>
+            </li>
+
+            <li class="li_"><a class="li_" href="Trigonometria.html">TRIGONOMETRÍA</a>
+                <ul>
+                </ul>
+            </li>
+            <li class="li_"><a class="li_" href="Fisica.html">FÍSICA</a>
+                <ul>
+                    <li><a href="#cantidades_fisicas">Cantidades Físicas</a></li>
+                    <li><a href="#analisis_dimensional">análisis dimensional</a></li>
+                    <li><a href="#Newton">leyes de Newton</a>
+                        <ul>
+                            <li><a href="#Newton">Primera</a></li>
+                            <li><a href="#Newton">Segunda</a></li>
+                            <li><a href="#Newton">Tercera</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#friccion">Fricción</a></li>
+                    <li><a href="#MRU">MRU</a></li>
+                    <li><a href="#MRUV">MRUV</a></li>
+                    <li><a href="#caida_libre">Caída libre</a></li>
+                    <li><a href="#mov_parabolico">Mov parabólico</a></li>
+                    <li><a href="#mov_semiparabolico">Mov semiparabólico</a></li>
+                    <li><a href="#mov_circunf">mov circunferencial</a></li>
+                    <li><a href="#trabajo">Trabajo</a></li>
+                    <li><a href="#energ_mecan">Energía mecánica</a>
+                        <ul>
+                            <li><a href="#EC">Energía cinética</a></li>
+                            <li><a href="#UG">Energía potencial gravitatoria</a></li>
+                            <li><a href="#EK">Energía elástica</a></li>
+                        </ul>
+                    </li> 
+                    <li><a href="#impulso">Impulso</a></li>
+                    <li><a href="#choq">Choques o colisiones</a></li>
+                    <li><a href="#MAS">mov armónico simple</a></li>
+                    <li><a href="#Pedunculo">Pedúnculo</a></li>
+                    <li><a href="#gravitacion">Gravitación</a></li>
+                    <li><a href="#kepler">Leyes de Kepler</a></li>
+                    <li><a href="#ond_mec">Ondas mecánicas</a></li>
+                    <li><a href="#espectro_electromag">Espectro electromagnético</a></li>
+                    <li><a href="#hidrostatica">Hidrostática</a></li>
+                    <li><a href="#calor_1">Calorimetría</a>
+                        <ul>
+                            <li><a href="#calor_1">Calorimetría I</a></li>
+                            <li><a href="#calor_2">Calorimetría II</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#termodinam_1">Termodinámica</a>
+                        <ul>
+                            <li><a href="#termodinam_1">Termodinámica I</a></li>
+                            <li><a href="#termodinam_1">Termodinámica II</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#elec_1">Electrostática</a>
+                        <ul>
+                            <li><a href="elec_1">Electrostática I</a></li>
+                            <li><a href="elec_2">Electrostática II</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#elec_3">Eletrodinámica</a></li>
+                    <li><a href="#elect_mag_1">Eletromagnetismo</a>
+                        <ul>
+                            <li><a href="#elect_mag_1">Electromagnetismo I</a></li>
+                            <li><a href="#elect_mag_2">Electromagnetismo II</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#optica_1">Óptica</a>
+                        <ul>
+                            <li><a href="#optica_1">Óptica I</a></li>
+                            <li><a href="#optica_2">Óptica II</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#fisic_modern">Física moderna</a></li>
+                </ul>
+            </li>
+
+            <li class="li_"><a class="li_" href="quimica.html">QUÍMICA</a>
+                <ul>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    
+    <div class="port">
+        <img src="Galería/principal/port_fisic_img.png">
+    </div>
+
+
+    <div class="div_filter">
+        <a><ins>CONTENIDO</ins></a><br>
+        <div>
+            <div>
+                <input type ="text" class="input_filter" id="input_filter" onkeyup="filter()" placeholder="search">
+            </div>
+            <div>
+                <ul class="list" id="list">
+                    <li><a href="#cantidades_fisicas">Cantidades físicas</a></li>
+                    <li><a href="#analisis_dimensional">Análisis dimensional</a></li>
+                    <li><a href="#Newton">Leyes de Newton</a></li>
+                    <li><a href="#friccion">Fuerza de fricción</a></li>
+                    <li><a href="#MRU">Movimiento rectilíneo uniforme</a></li>
+                    <li><a href="#MRUV">Movimiento rectilíneo uniformemente variable</a></li>
+                    <li><a href="#caida_libre">Movimiento de caída libre</a></li>
+                    <li><a href="#mov_parabolico">Movimiento parabólico</a></li>
+                    <li><a href="#mov_semiparabolico">Movimiento semiparabólico</a></li>
+                    <li><a href="#mov_circunf">Movimiento circunferencial</a></li>
+                    <li><a href="#trabajo">Trabajo mecánico</a></li>
+                    <li><a href="#energ_mecan">Energía mecánica (cinética, elástica y potencial gravitatoria)</a></li>
+                    <li><a href="#impulso">Impulso</a></li>
+                    <li><a href="#choq">Choques o colisiones</a></li>
+                    <li><a href="#MAS">Movimiento armónico simple</a></li>
+                    <li><a href="#Pedunculo">Pedúnculo</a></li>
+                    <li><a href="#gravitacion">Gravitación universal</a></li>
+                    <li><a href="#kepler">Leyes de Kepler</a></li>
+                    <li><a href="#ond_mec">Ondas mecánicas</a></li>
+                    <li><a href="#espectro_electromag">Espectro electromagnético</a></li>
+                    <li><a href="#hidrostatica">Hidrostática</a></li>
+                    <li><a href="#calor_1">Calorimetría</a></li>
+                    <li><a href="#termodinam_1">Termodinámica</a></li>
+                    <li><a href="#elec_1">Electrostática</a></li>
+                    <li><a href="#elec_"></a></li>
+                    <li><a href="#elec_3">Electrodinámica</a></li>
+                    <li><a href="#elect_mag_1">Electromagnetismo</a></li>
+                    <li><a href="#optica_1">Óptica</a></li>
+                    <li><a href="#fisic_modern">Física moderna</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    <div>
+        <button id="cantidades_fisicas"><ins>CANTIDADES FÍSICAS</ins></button>
+        <div><button>Fundamentales</button></div>
+        <div><img src="Galería/Fisic/cantidades fisicas.png"></div>
+    </div>
+
+
+    <div>
+        <button id="analisis_dimensional"><ins>ANÁLISIS DIMENSIONAL</ins></button>
+        <div>
+            <img src="Galería/Fisic/analisis_1.png">
+            <img src="Galería/Fisic/analisis_2.png">
+        </div>
+    </div>
+
+
+    <div>
+        <button id="Newton"><ins>LEYES DE NEWTON</ins></button>
+        <div>
+            <button><ins>1° LEY DE NEWTON</ins></button>
+            <div class="Newton_div_1"><a class="text_2">"Un objeto en reposo permanecerá en reposo, y un objeto en movimiento continuará moviéndose en línea recta a una velocidad constante, a menos que una fuerza externa actúe sobre él".</a></div>
+            <button><ins>2° LEY DE NEWTON</ins></button>
+            <div class="Newton_div_1"><a class="text_2">también conocida como la ley de la fuerza o ley de la aceleración, establece la relación entre la fuerza aplicada a un objeto, su masa y la aceleración que experimenta. La ley se enuncia de la siguiente manera:</a></div>
+            <div class="Newton_div_"><a class="text_1">Fuerza = Masa x Aceleración</a></div>
+            <button><ins>3° LEY DE NEWTON</ins></button>
+            <div class="Newton_div_2"><a class="text_2">"Para cada acción, hay una reacción igual y opuesta."</a></div>
+            <div><img src="Galería/Fisic/Newton_3.png"></div>
+        </div>
+    </div>
+
+
+    <div>
+        <button id="friccion"><ins>FRICCIÓN</ins></button>
+        <div><img src="Galería/Fisic/fricción.png"></div>
+    </div>
+
+
+    <div>
+        <button id="MRU"><ins>MOVIMIENTO RECTILÍNEO UNIFORME</ins></button>
+        <div><img src="Galería/Fisic/MRU.png"></div>
+    </div>
+
+    
+    <div>
+        <button id="MRUV"><ins>MOVIMIENTO RECTILÍNEO UNIFORMEMENTE VARIADO (MRUV)</ins></button>
+        <div><img src="Galería/Fisic/MRUV.png"></div>
+        <div><img src="Galería/Fisic/MRUV_form.png"></div>
+    </div>
+
+
+    <div>
+        <button id="caida_libre"><ins>MOVIMIENTO DE CAÍDA LIBRE</ins></button>
+        <div><img src="Galería/Fisic/caida_libre.png"></div>
+    </div>
+
+
+    <div>
+        <button id="mov_parabolico"><ins>MOVIMIENTO PARABÓLICO</ins></button>
+        <div><img src="Galería/Fisic/Mov_Parab.png"></div>
+    </div>
+
+
+    <div>
+        <button id="mov_semiparabolico"><ins>MOVIMIENTO SEMIPARABÓLICO</ins></button>
+        <div><img src="Galería/Fisic/Mov_Semiparab.png"></div>
+    </div>
+
+
+    <div>
+        <button id="mov_circunf"><ins>MOVIMIENTO CIRCUNFERENCIAL UNIFORME</ins></button>
+        <div><img src="Galería/Fisic/Mov_Cirfunc.png"></div>
+    </div>
+
+
+    <div>
+        <button id="trabajo"><ins>TRABAJO</ins></button>
+        <div><img src="Galería/Fisic/trabajo.png"></div>
+    </div>
+
+
+    <div>
+        <button id="energ_mecan"><ins>ENERGÍA MECÁNICA (EM)</ins></button>
+        <div><img src="Galería/Fisic/energ_mecan.png"></div>
+        <div>
+            <div>
+                <button id="EC"><ins>Energía Cinética (EC)</ins></button>
+                <div><img src="Galería/Fisic/energ_cin.png"></div>
+            </div>
+            <div>
+                <button id="UG"><ins>Energía potencial gravitatoria (EPG)</ins></button>
+                <div><img src="Galería/Fisic/energ_PG.png"></div>
+            </div>
+            <div>
+                <button id="EK"><ins>ENERGÍA elástica (EK)</ins></button>
+                <div><img src="Galería/Fisic/energ_elast.png"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <button id="impulso"><ins>IMPULSO (I) Y CANTIDAD DE MOVIMIENTO (P)</ins></button>
+        <div><img src="Galería/Fisic/impulso.png"></div>
+    </div>
+
+
+    <div>
+        <button id="choq"><ins>CHOQUES O COLISIONES</ins></button>
+        <div><img src="Galería/Fisic/Choq.png"></div>
+    </div>
+
+
+    <div>
+        <button id="MAS"><ins>MOVIMIENTO ARMÓNICO SIMPLE</ins></button>
+        <div><img src="Galería/Fisic/MAS.png"></div>
+        <div><img src="Galería/Fisic/MAS_grafica.png"></div>
+    </div>
+    
+    
+    <div>
+        <button id="Pedunculo"><ins>PEDÚNCULO</ins></button>
+        <div><img src="Galería/Fisic/pedunculo.png"></div>
+    </div>
+
+
+    <div>
+        <button id="gravitacion"><ins>GRAVITACIÓN UNIVERSAL</ins></button>
+        <div><img src="Galería/Fisic/gravitacion.png"></div>
+    </div>
+
+
+    <div>
+        <button id="kepler"><ins>LEYES DE KEPLER</ins></button>
+        <div>
+            <a class="text_1">1° LEY DE KEPLER (ley de las órbitas): </a>
+            <a class="text_2">Todo planeta gira alrededor del sol describiendo una trayectoria elíptica, y el sol se ubica en uno de sus focos.</a>
+            <div><img src="Galería/Fisic/kepler_1.png"></div>
+        </div>
+        <div>
+            <a class="text_1">2° LEY DE KEPLER (ley de las áres): </a>
+            <a class="text_2">el radio vector que parte del sol hasta un planeta forma áreas que son directamente proporcionales a los tiempos.</a>
+            <div><img src="Galería/Fisic/kepler_2.png"></div>
+        </div>
+        <div>
+            <a class="text_1">3° LEY DE KEPLER (ley de periodos): </a>
+            <a class="text_2">El cuadrado del periodo es directamente proporcional al cubo del radio medio.</a>
+            <div><img src="Galería/Fisic/kepler_3.png"></div>
+        </div>
+    </div>
+
+
+    <div>
+        <button id="ond_mec"><ins>ONDAS MECÁNICAS</ins></button>
+        <div><a>.</a></div>
+        <div><a class="text_2">Se propagan en cualquier sólido, líquido y gas, pero no es el vacío, y el medio de propagación se considera ideal</a></div>
+        <div>
+            <a class="text_1">LONGITUDINALES</a>
+            <a class="text_2">Es aquella en la que las partes del medio oscilan en la misma dirección de propagación de la onda</a>
+        </div>
+        <div>
+            <a class="text_1">TRANSVERSALES</a>
+            <a class="text_2">Es aquella en la cual la  vibración es perpendicular a la dirección de la velocidad de propagación</a>
+        </div>
+        <div><img src="Galería/Fisic/ond_mec.png"></div>
+    </div>
+
+
+    <div>
+        <button id="espectro_electromag"><ins>ESPECTRO ELECTROMAGNÉTICO</ins></button>
+        <div><img src="Galería/Fisic/espectro_electromag.png"></div>
+    </div>
+    
+
+
+    <div>
+        <button id="hidrostatica"><ins>HIDROSTÁTICA</ins></button>
+        <div><img src="Galería/Fisic/Hidrostática.png"></div>
+    </div>
+
+
+    <div>
+        <button id="calor_1"><ins>CALORIMETRÍA I</ins></button>
+        <div><img src="Galería/Fisic/Calor.png"></div>
+        <div><a class="text_2">OJO: el calor latente es la cantidad de calor que se necesita agregar o eliminar a una sustancia para cambiar su estado, ya sea de sólido a líquido (fusión), de líquido a gas (vaporización) o de gas a líquido (condensación) sin cambiar su temperatura.</a></div>
+        <div>
+            <label class="text_1" for="TempC">CELSIUS: </label><input class="text_2"name="TempC" id="TempC"><button onclick="onclick_convert_TempC()">Convertir</button><br>
+            <a class="text_1">FAHRENHEIT: </a><a id="TempC_F" class="text_2"></a><br>
+            <a class="text_1">KELVINS: </a><a id="TempC_K" class="text_2"></a><br>
+        </div>
+    </div> 
+
+
+    <div>
+        <button id="calor_2"><ins>CALORIMETRÍA II</ins></button>
+        <div><a class="text_1">Formas o mecanismos de transferencia de calor:</a></div>
+        <div><img src="Galería/Fisic/calor_2.png"></div>
+        
+    </div> 
+
+
+    <div>
+        <button id="termodinam_1"><ins>TERMODINÁMICA I</ins></button>
+        <div><a class="text_2">En general, para un sistema cerrado se cumple lo siguiente:</a></div>
+        <div><img src="Galería/Fisic/termodinam.png"></div>
+        <div><a class="text_1">PROCESOS TERMODINÁMICOS RESTRINGIDOS:</a></div>
+        <div><img src="Galería/Fisic/termodinam_type.png"></div>
+    </div>
+
+
+    <div>
+        <button id="termodinam_2"><ins>TERMODINÁMICA II</ins></button>
+        <div><img src="Galería/Fisic/termodinam_mtmr.png"></div>
+    </div>
+
+
+    <div>
+        <button id="elec_1"><ins>ELECTROSTÁTICA I</ins></button>
+        <div><img src="Galería/Fisic/electrostatica_1.png"></div>
+    </div>
+
+
+    <div>
+        <button id="elec_2"><ins>ELECTROSTÁTICA II</ins></button>
+        <div><img src="Galería/Fisic/electrostatica_2.png"></div>
+    </div>
+
+
+    <div>
+        <button id="elec_3"><ins>ELECTRODINÁMICA</ins></button>
+        <div><img src="Galería/Fisic/electrodinamica.png"></div>
+        <div><img src="Galería/Fisic/electrodinamica_extra.png"></div>
+    </div>
+
+
+    <div>
+        <button id="elect_mag_1"><ins>ELECTROMAGNETISMO 1</ins></button>
+        <div><img src="Galería/Fisic/electromag.png"></div>
+    </div>
+
+    
+    <div>
+        <button id="elect_mag_2"><ins>ELECTROMAGNETISMO II</ins></button>
+        <div><img src="Galería/Fisic/electromag_.png"></div>
+    </div>
+
+
+    <div>
+        <button id="optica_1"><ins>ÓPTICA I</ins></button>
+        <div>
+            <a class="text_1">ESPEJOS PLANOS: </a>
+            <a class="text_2">Son todas las superficies pulimentadas en donde la energía luminosa se refleja en su totalidad.</a>
+            <div><img src="Galería/Fisic/esp_plan.png"></div>
+        </div>
+        <div>
+            <a class="text_1">ESPEJOS ESFÉRICOS: </a>
+            <a class="text_2">Son aquellos que se originan de porciones de superficies esféricas (son casquetes), hay dos tipos: Convexo y Cóncavo. (Por si acaso, "C" significa centro, "F" significa foco y "V" signfica vértice)</a>
+            <div><a>.</a></div>
+            <div>
+                <a class="text_1">-CONVEXO</a>
+                <a class="text_2">Hay solamente un caso</a>
+                <div><img src="Galería/Fisic/esp_convex.png"></div>
+            </div>
+            <div>
+            <a class="text_1">-CÓNCAVO</a>
+            <a class="text_2">Hay 4 casos (dependiendo de donde se encuentre la imagen, pero si la "imagen" está en el foco entonces no se forma imagen, por este motivo no se cuenta este caso).</a>
+            <div><img src="Galería/Fisic/esp_concav.png"></div>
+        </div>
+        </div>
+        
+    </div>
+
+    
+    <div>
+        <button id="optica_2"><ins>ÓPTICA II</ins></button>
+        <div><img src="Galería/Fisic/optica_ecuac.png"></div></div>
+    </div>
+
+
+    <div>
+        <button id="fisic_modern"><ins>FÍSICA MODERNA</ins></button>
+        <div><img src="Galería/Fisic/fisic_modern.png"></div>
+    </div>
+
+
+    
+<script src="script.js"></script>
+</body>
+</html>

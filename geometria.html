@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kriptobyte: Geometría</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="icon" href="Galería/principal/Logo_Windows.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <script>
+        const open_modal = document.querySelector("#open_modal");
+        const closed_modal = document.querySelector("#closed_modal");
+        const modal = document.querySelector("#modal");
+
+        open_modal.addEventListener("click",()=>{
+            modal.showModal();
+        })
+
+        closed_modal.addEventListener("click",()=>{
+            modal.close();
+        })
+
+    </script>
+
+
+    <div class="clas_1">
+        <div>
+            <a href="main.html"><img class="logo" src="Galería/principal/Logo.png" width="250", height="40"></a>
+        </div>
+
+        <ul class="menu">
+
+            <li class="li_"><a class="li_" href="algebra.html">ÁLGEBRA</a>
+                <ul>
+                </ul>
+            </li>
+            
+            <li class="li_"><a class="li_" href="Geometria.html">GEOMETRÍA</a>
+                <ul>
+                    <li><a href="#b_c">Conceptos básicos</a></li>
+                    <li><a href="#angulo">ángulos</a></li>
+                    <li><a href="#cuadrilatero">cuadriláteros</a></li>
+                    <li><a href="#area_triang">área en triángulos</a></li>
+                    <li><a href="#trapecio">Trapecio</a></li>
+                    <li><a href="#ceviana">Teorema de ceviana</a></li>
+                    <li><a href="#lin_notab">Líneas notables</a>
+                        <ul>
+                            <li><a href="#lin_notab">bisectriz</a></li>
+                            <li><a href="#lin_notab">mediana</a></li>
+                            <li><a href="#lin_notab">mediatriz</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#rela_metri">relaciones métricas</a>
+                        <ul>
+                            <li><a href="#rela_metri_triang">Triángulo</a></li>
+                            <li><a href="#rela_metri_circunf">Circunferencia</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#teor_incentro">Teoremas</a>
+                        <ul>
+                            <li><a href="#teor_incentro">Incentro___</a></li>
+                            <li><a href="#teor_mediana">Mediana___</a></li>
+                            <li><a href="#teor_thales">Thales___</a></li>
+                            <li><a href="#teor_heron">Heron___</a></li>
+                            <li><a href="#teor_pilot">Pilot___</a></li>
+                            <li><a href="#teor_proyeccion">Proyección___</a></li>
+                            <li><a href="#teor_tolomeo">Tolomeo___</a></li>
+                            <li><a href="#teor_menelao">Menelao___</a></li>
+                            <li><a href="#teor_other_1">Otros___</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#polig">Polígonos</a></li>
+                    <li><a href="#polig_ins">Polígonos inscritos</a></li>
+                    <li><a href="#geom_esp">Geometría espacial</a></li>
+                    <li><a href="#ang_diedro">Ángulo diedro</a></li>
+                    <li><a href="#ang_triedro">Ángulos triedro</a></li>
+                    <li><a href="#poliedro">Poliedro</a>
+                        <ul>
+                            <li><a href="#Poliedro_PR">Paralelopípedo</a></li>
+                            <li><a href="#PR_1">Tetraedro</a></li>
+                            <li><a href="#PR_2">Hexaedro</a></li>
+                            <li><a href="#PR_3">Octaedro</a></li>
+                            <li><a href="#PR_4">Dodecaedro</a></li>
+                            <li><a href="#PR_5">Icosaedro</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#b_solid">sólidos geométricos</a>
+                        <ul>
+                            <li><a href="#b_solid_prisma">Prisma_____</a></li>
+                            <li><a href="#b_solid_piram">Pirámide_____</a></li>
+                            <li><a href="#b_solid_cono">Cono _____</a></li>
+                            <li><a href="#b_solid_cilin">Cilindro _____</a></li>
+                            <li><a href="#b_solid_esf">Esfera_____</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="li_"><a class="li_" href="Trigonometria.html">TRIGONOMETRÍA</a>
+                <ul>
+                </ul>
+            </li>
+            <li class="li_"><a class="li_" href="Fisica.html">FÍSICA</a>
+                <ul>
+                </ul>
+            </li>
+
+            <li class="li_"><a class="li_" href="quimica.html">QUÍMICA</a>
+                <ul>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="port">
+        <img src="Galería/principal/port_geom_img.png">
+    </div>
+
+    
+    <div class="div_filter">
+        <a><ins>CONTENIDO</ins></a><br>
+        <div>
+            <div>
+                <input type="text" class="input_filter" id="input_filter" onkeyup="filter()" placeholder="search">
+            </div>
+            <div>
+                <ul class="list" id="list">
+                    <li><a href="#angulo">Ángulos</a></li>
+                    <li><a href="#cuadrilatero">Cuadriláteros</a></li>
+                    <li><a href="#area_triang">Área de triángulos</a></li>
+                    <li><a href="#trapecio">Trapecio</a></li>
+                    <li><a href="#ceviana">Teorema de ceviana</a></li>
+                    <li><a href="#lin_notab">Línea notable: Bisectriz</a></li>
+                    <li><a href="#lin_notab">Línea notable: Mediana</a></li>
+                    <li><a href="#lin_notab">Línea notable: Mediatriz</a></li>
+                    <li><a href="#rela_metri">Relaciones métricas en el triángulo</a></li>
+                    <li><a href="#rela_metri_circunf">Relaciones métricas en la circunferencia</a></li>
+                    <li><a href="#teor_thales">Teorema de Thales</a></li>
+                    <li><a href="#teor_heron">Teorema de Herón</a></li>
+                    <li><a href="#teor_pilot">Teorema de Pilot</a></li>
+                    <li><a href="#teor_menelao">Teorema de Menelao</a></li>
+                    <li><a href="#teor_tolomeo">Teorema de Tolomeo</a></li>
+                    <li><a href="#teor_proyeccion">Teorema de proyecciones</a></li>
+                    <li><a href="#Poliedro_PR">Polígono: Paralelopípedo</a></li>
+                    <li><a href="#polig_ins">Polígonos inscritos</a></li>
+                    <li><a href="#geom_esp_I">Geometría espacial: Conceptos, postulados y determinación de plano</a></li>
+                    <li><a href="#geom_esp_Ii">Geometría espacial: proyección ortogonal</a></li>
+                    <li><a href="#geom_esp_teor">Geometría espacial: Teorema de las tres perpendiculares</a></li>
+                    <li><a href="#ang_diedro">Ángulo diedro</a></li>
+                    <li><a href="#ang_triedro">Ángulos triedro</a></li>
+                    <li><a href="#PR_1">Poliedros regulares: Tetraedro</a></li>
+                    <li><a href="#PR_2">Poliedros regulares: Hexaedro</a></li>
+                    <li><a href="#PR_3">Poliedros regulares: Octaedro</a></li>
+                    <li><a href="#PR_4">Poliedros regulares: Dodecaedro</a></li>
+                    <li><a href="#PR_5">Poliedros regulares: Icosaedro</a></li>
+                    <li><a href="#PR_conj">Poliedros regulares conjugados</a></li>
+                    <li><a href="#b_solid_prisma">Sólido: Prisma</a></li>
+                    <li><a href="#b_solid_piram">Sólido: Pirámide</a></li>
+                    <li><a href="#b_solid_cono">Sólido: Cono</a></li>
+                    <li><a href="#b_solid_cilin">Sólido: Cilindro</a></li>
+                    <li><a href="#b_solid_esf">Sólido: Esfera</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="c">
+        <button id="b_c"><ins>  CONCEPTOS BÁSICOS</ins></button>
+        <div><img src="Galería/Geom/Init.png"></div>
+    </div>
+
+    <div>
+        <button id="angulo"><ins>ÁNGULOS</ins></button>
+        <div>
+            <img src="Galería/Geom/ang_1.png">
+            <img src="Galería/Geom/ang_2.png">
+            <img src="Galería/Geom/ang_3.png">
+        </div>
+    </div>
+
+
+    <div>
+        <button id="cuadrilatero"><ins>CUADRILÁTEROS</ins></button>
+        <div><img src="Galería/Geom/cuadrilatero.png"></div>
+    </div>
+
+
+    <div>
+        <button id="area_triang"><ins>ÁREA DE TRIÁNGULO</ins></button>
+        <div><img src="Galería/Geom/area_triang_1.png"></div>
+        <div><img src="Galería/Geom/area_triang_2.png"><img src="Galería/Geom/area_triang_3.png" class="arreglo_1"></div>
+    </div>
+
+
+    <div>
+        <button id="trapecio"><ins>-TRAPECIO</ins></button>
+        <div>
+            <img src="Galería/Geom/trapecio_1.png">
+            <img src="Galería/Geom/trapecio_2.png">
+        </div>
+    </div>
+
+
+    <div>
+        <button id="ceviana"><ins>TEOREMA DE CEVIANAS</ins></button>
+        <div><a class="text_2">Son segmentos de recta que une el vértice de un triángulo con el lado opuesto a este. Hay algunos teoremas.</a></div>
+        <div><img src="Galería/Geom/ceviana.png"></div>
+    </div>
+
+
+    <div>
+        <button id="lin_notab"><ins>LINEAS NOTABLES</ins></button>
+        <div><a class="text_1">BISECTRIZ</a><a class="text_2"> Es la ceviana con origen en el vértice del ángulo y que lo divide en dos ángulos de igual medida.</a></div>
+        <div><img src="Galería/Geom/bisectriz.png"></div>
+        <div><img src="Galería/Geom/teor_bisectriz.png"></div>
+        <div><a class="text_2">THALES + BISECTRIZ</a></div>
+        <div><img src="Galería/Geom/teor_bisectriz_.png"></div>
+        <div><a class="text_1">MEDIANA</a><a class="text_2"> Es la ceviana que une un vértice con el punto medio del lado opuesto.</a></div>
+        <div><img src="Galería/Geom/mediana.png"></div>
+        <div><a class="text_1">MEDIATRIZ</a><a class="text_2"> Es una ceviana perpendicular a un lado del triángulo, que pasa por el punto medio de dicho lado.</a></div>
+        <div><img src="Galería/Geom/mediatriz.png"></div>
+    </div>
+
+
+    <div>
+        <button id="rela_metri"><ins>RELACIONES MÉTRICAS</ins></button>
+        <div>
+            <button id="rela_metri_triang"><ins>-RELACIONES MÉTRICAS EN TRIÁNGULO RECTÁNGULO</ins></button>
+            <div><img src="Galería/Geom/rel_metric_triang.png"></div>
+        </div>
+        <div>
+            <button id="rela_metri_circunf"><ins>-RELACIONES MÉTRICAS EN LA CIRCUNFERENCIA</ins></button>
+            <div>
+                <button>==>TEORÍA DE CUERDAS</button>
+                <div><img src="Galería/Geom/teor_cuerdas.png"></div>
+            </div>
+            <div>
+                <button>==>TEORÍA SECANTE</button>
+                <div><img src="Galería/Geom/teor_sec.png"></div>
+            </div>
+            <div>
+                <button>==>TEORÍA TANGENTE</button>
+                <div><img src="Galería/Geom/teor_tang.png"></div>
+            </div>
+            <div>
+                <button>==>UNO MÁS :D</button>
+                <div><img src="Galería/Geom/rel_metric_triang_.png"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <button id="teor_incentro"><ins>TEOREMA DEL INCENTRO</ins></button>
+        <div><img src="Galería/Geom/teor_incentro.png"></div>
+    </div>
+
+    <div>
+        <button id="teor_mediana"><ins>TEOREMA DE LA MEDIANA</ins></button>
+        <div><img src="Galería/Geom/teor_mediana.png"></div>
+    </div>
+
+
+    <div>
+        <button id="teor_thales"><ins>TEOREMA DE THALES</ins></button>
+        <div><img src="Galería/Geom/teor_thales.png"></div>
+    </div>
+
+    <div>
+        <button id="teor_heron"><ins>TEOREMA DE HERÓN</ins></button>
+        <div><img src="Galería/Geom/teor_heron.png"></div>
+    </div>
+
+    <div>
+        <button id="teor_pilot"><ins>TEOREMA DE PILOT</ins></button>
+        <div><img src="Galería/Geom/teor_pilot.png"></div>
+    </div>
+
+    <div>
+        <button id="teor_proyeccion"><ins>TEOREMA DE LAS PROYECCIONES</ins></button>
+        <div><img src="Galería/Geom/teor_proyecciones.png"></div>
+    </div>
+
+    <div>
+        <button id="teor_tolomeo"><ins>TEOREMA DE TOLOMEO</ins></button>
+        <div><img src="Galería/Geom/teor_tolomeo.png"></div>
+    </div>
+
+    <div>
+        <button id="teor_menelao"><ins>TEOREMA DE MENELAO</ins></button>
+        <div><img src="Galería/Geom/teor_menelao.png"></div>
+    </div>
+
+    <div>
+        <button id="teor_other_1"><ins>OTRO</ins></button>
+        <div><img src="Galería/Geom/other_1.png"></div>
+    </div>
+
+
+    <div>
+        <button id="polig"><ins>POLÍGONOS</ins></button>
+        <div><img src="Galería/Geom/polig.png"></div>
+    </div>
+    <div>
+        <button id="polig_ins"><ins>Polígonos inscritos</ins></button>
+        <div><a class="text_2">Son todos los polígonos regulares que pueden entrar en una circunferencia de tal manera que sus vertices coincidan con esta circunferencia.</a></div>
+        <div><img src="Galería/Geom/polig_ins.png"></div>
+        <div><a>.</a></div><div><a>.</a></div>
+        <div><a class="text_1">POLÍGONOS REGULARES INSCRITOS NOTABLES</a></div>
+        <div><img src="Galería/Geom/polig_ins_not.png"></div>
+    </div>
+
+
+    <div>
+        <button id="geom_esp_I"><ins>GEOMETRÍA ESPACIAL I</ins></button>
+        <div><a class="text_1">CAMPO DE ESTUDIO: </a><a class="text_2">La geometría del espacio tiene por objeto de estudio las figuras geométricas contenidas en el espacio geométrico, es la generalización de la geometría plana.</a></div>
+        <div><a class="text_1">POSTULADOS FUNDAMENTALES: </a>
+            <a class="text_2">-Existen infinitas rectas e infinitos planos.</a>
+            <a class="text_2">-Por cada punto pasan infinitas rectas.</a>
+            <a class="text_2">-Si dos planos se intersecan, entonces su intersección es una recta.</a>
+            <a class="text_2">-Todas las rectas y planos son conjuntos de puntos.</a>
+            <a class="text_2">-Existen infinitos puntos que no pertenecen a un plano.</a>
+            <a class="text_2">-Si dos o más puntos de una recta pertenecen a un plano, entonces todos los puntos de la recta pertenecen al plano.</a>
+        </div>
+        <div><a class="text_1">DETERMINACIÓN DE UN PLANO</a><br><img src="Galería/Geom/determ_plan.png"></div>
+        <div><img src="Galería/Geom/determ_plan_.png" alt=""></div>
+        
+        
+        
+        <div>
+        <button id="geom_esp_II"><ins>GEOMETRÍA ESPACIAL II</ins></button><br>
+        <a id="geom_esp_teor" class="text_1">TEOREMA DE LAS TRES PERPENDICULARES:</a><br>
+        <a class="text_2">Si por el pie de una recta perpendicular a un plano se traza una recta perpendicular a otra recta contenida en el plano, entonces toda recta que contiene al pie de la segunda perpendicular ese interseca a la primera, es perpendicular a la recta contenida en el plano.</a><br>
+        <img src="Galería/Geom/teor_3_perp.png"><br><br>
+        <a class="text_1">PROYECCIONES ORTOGONALES</a><br>
+        <img src="Galería/Geom/proyeccion_ortogonal.png">
+    </div>
+
+
+    <div>
+        <button id="ang_diedro"><ins>ÁNGULO DIEDRO</ins></button><br><br>
+        <a class="text_1">DEFINICIÓN: </a><a class="text_2">Se denomina ángulo diedro o simplemente diedro, a la unión de una recta y los dos semiplanos no coplanares, determinados por la recta.</a>
+        <div style="display: flex; justify-content: center;">
+            <div style="text-align: center; width: 35%;">
+                <br><br><br>
+                <a class="text_1">NOTACIÓN DE DIEDRO: </a><br>
+                <a class="text_2">Diedro P-AB-Q<br>diedro AB</a><br><br>
+                <a class="text_1">ELEMENTOS:</a><br>
+                <a class="text_2">
+                    Aristas: La recta que determina los semiplanos<br>en la figura: AB<br>
+                    Cara: Cada uno de los semiplanos, unido con la arista<br>en la figura: P y Q</a>
+            </div>
+            <div style="width: 30%;"><img src="Galería/Geom/diedro.png"></div>
+            <div style="text-align: center;">
+                <br><br><br>
+                <a class="text_1">NOTACIÓN DEL ÁNGULO DIEDRO:</a><br><br><br>
+                <a class="text_2">x < 90 <=> el diedro es agudo</a><br><br>
+                <a class="text_2">x = 90 <=> el diedro es recto</a><br><br>
+                <a class="text_2">x > 90 <=> el diedro es obtuso</a><br>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <button id="ang_triedro"><ins>ÁNGULO TRIEDRO</ins></button><br><br>
+        <a class="text_1">DEFINICIÓN: </a><a class="text_2">Es un ángulo poliedro que tiene 3 caras</a>
+        <div style="display: flex;">
+            <div style="width: 40%;">
+                <br><br><br>
+                <a class="text_1" style="text-align: center;">ELEMENTOS:</a><br>
+                <a class="text_2">1. Vértice: O</a><br>
+                <a class="text_2">2. Caras: O</a><br>
+                <a class="text_2">3. Diedros: Son los ángulos diedros formados por dos caras adyacentes.</a><br><br>
+                <a class="text_1">NOTACIÓN:</a><br>
+                <a class="text_2">Ángulo triedro O-ABC</a><br>
+                <a class="text_2">0° < a + b + c < 360°</a>
+            </div>
+            <div><img src="Galería/Geom/triedro.png"></div>
+        </div>
+    </div>
+
+
+    <div>
+        <button id="poliedro"><ins>POLIEDROS</ins></button>
+        <div><img src="Galería/Geom/poliedro_form.png"></div>
+        <div>
+            <button id="Poliedro_PR">-PARALELOPIPEDO RECTANGULAR</button>
+            <div><img src="Galería/Geom/PR.png"></div>
+        </div>
+        <button id="Poliedro_Reg"><ins>-POLIEDROS REGULARES</ins></button>
+        <div>
+            <div>
+                <a id="PR_1"class="text_1">=>TETRAEDRO:</a><a class="text_2">4 caras, 6 aristas y 4 vertices</a>
+                <div><img src="Galería/Geom/tetraedro.png"></div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a id="PR_2" class="text_1">=>HEXAEDRO:</a><a class="text_2">6 caras, 12 aristas y 8 vertices</a>
+                <div><img src="Galería/Geom/hexaedro.png"></div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a id="PR_3" class="text_1">=>OCTAEDRO:</a><a class="text_2">8 caras, 12 aristas y 6 vertices</a>
+                <div><img src="Galería/Geom/octaedro.png"></div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a id="PR_4" class="text_1">=>DODECAEDRO</a>
+                <div><img src="Galería/Geom/dodecaedro.png"></div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a id="PR_5"class="text_1">=>ICOSAEDRO</a>
+                <div><img src="Galería/Geom/icosaedro.png"></div>
+            </div>
+        </div>
+        <div><a id="PR_conj"class="text_1">Poliedros conjugados</a><a class="text_2"> Son un dúo de polígonos cuyo números de aristas es el mismo y el número de caras del primero es igual al número de vertices del otro y viceversa.</a></div>
+        <div><a class="text_2">-El tetraedro es polígono conjugado con sí mismo</a></div>
+        <div><a class="text_2">-El hexaedro es polígono conjugado con el octaedro</a></div>
+        <div><a class="text_2">-El dodecaedro es polígono conjugado con el icosaedro</a></div>
+    </div>
+
+
+    <div class="solid">
+        <div><button id="b_solid"><ins>SÓLIDOS GEOMÉTRICOS</ins></button></div>
+        
+        <div>
+            <button id="b_solid_prisma">-PRISMA</button>
+            <div>
+                <img src="Galería/Geom/Pris_Rect.png">
+                <img src="Galería/Geom/Pris_Oblic.png">
+                <img src="Galería/Geom/Pris_Tron.png">
+            </div>
+        </div>
+
+        <div>
+            <button id="b_solid_piram"> -PIRÁMIDE </button>
+            <div>
+                <img src="Galería/Geom/Piram.png">
+                <img src="Galería/Geom/Piram_Tron.png">
+            </div>
+        </div>
+
+        <div>
+            <button id="b_solid_cono">-CONO</button>
+            <div>
+                <img src="Galería/Geom/Cono.png">
+                <img src="Galería/Geom/Cono_Tron.png">
+            </div>
+        </div>
+        <div>
+            <button id="b_solid_cilin">-CILINDRO</button>
+            <div>
+                <img src="Galería/Geom/Cilindro.png">
+                <img src="Galería/Geom/Cilindro_Oblic.png">
+            </div>
+        </div>
+        <div>
+            <button id="b_solid_esf">-ESFERA</button>
+            <div>
+                <img src="Galería/Geom/Esfera.png">
+                <img src="Galería/Geom/Esfera_.png">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kriptobyte: Trigonometría</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="icon" href="Galería/principal/Logo_Windows.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <script>
+        const open_modal = document.querySelector("#open_modal");
+        const closed_modal = document.querySelector("#closed_modal");
+        const modal = document.querySelector("#modal");
+
+        open_modal.addEventListener("click",()=>{
+            modal.showModal();
+        })
+
+        closed_modal.addEventListener("click",()=>{
+            modal.close();
+        })
+
+    </script>
+
+
+    <div class="clas_1">
+        <div>
+            <a href="main.html"><img class="logo" src="Galería/principal/Logo.png" width="250", height="40"></a>
+        </div>
+
+        <ul class="menu">
+
+            <li class="li_"><a class="li_" href="algebra.html">ÁLGEBRA</a>
+                <ul>
+                </ul>
+            </li>
+            
+            <li class="li_"><a class="li_" href="Geometria.html">GEOMETRÍA</a>
+                <ul>
+                </ul>
+            </li>
+
+            <li class="li_"><a class="li_" href="Trigonometria.html">TRIGONOMETRÍA</a>
+                <ul>
+                    <li><a href="#sist_medidas">sistema de medidas</a>
+                    <li><a href="#Triang_Notab">triángulos notables</a></li>
+                    <li><a href="#RT">razones trigonométricas</a>
+                        <ul>
+                            <li><a href="#RT_Ag">agudos</a></li>
+                            <li><a href="#RT_Cua">cuadrantes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#circun">Circunferencia</a></li>
+                    <li><a href="#IT">Identidades Trigonométricas</a>
+                        <ul>
+                            <li><a href="#1">básicas</a></li>
+                            <li><a href="#2">auxiliares</a></li>
+                            <li><a href="#3">compuesta</a></li>
+                            <li><a href="#4">ángulo mitad</a></li>
+                            <li><a href="#5">ángulo doble</a></li>
+                            <li><a href="#6">ángulo triple</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#Trans_Trigo">Transformaciones Trigonométricas</a></li>
+                    <li><a href="#triang_obli_I">Triángulo oblicuángulos</a>
+                        <ul>
+                            <li><a href="#triang_obli_I">Fórmulas básicas</a></li>
+                            <li><a href="#triang_obli_II">seno coseno tangente</a></li>
+                            <li><a href="#triang_obli_III">Área</a></li>
+                            <li><a href="#triang_obli_IV">mediana y bisectriz</a></li>
+                            <li><a href="#triang_obli_V">radio exterior</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#funcion_1">Funciones I</a>
+                        <ul>
+                            <li><a href="#funcion_sen">Seno</a></li>
+                            <li><a href="#funcion_cos">Coseno</a></li>
+                            <li><a href="#funcion_tan">Tangente</a></li>
+                            <li><a href="#funcion_cot">Cotangente</a></li>
+                            <li><a href="#funcion_sec">Secante</a></li>
+                            <li><a href="#funcion_csc">Cosecante</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#funcion_2">Funciones II</a></li>
+                    <li><a href="#funcion_aux">Funciones auxiliares</a></li>
+                    <li><a href="#funcion_inv">Funciones inversas (arco)</a></li>
+                    <li><a href="#ecua">Ecuación trigonométrica</a></li>
+                    <li><a href="#cuadrilateros">Cuadriláteros</a></li>
+                    <li><a href="#ecuac_Rect">Ecuación de recta</a></li>
+                    <li><a href="#ecuac_circunf">Ecuación de circunferencia</a></li>
+                    <li><a href="#ecuac_parab">Parábola</a></li>
+                    <li><a href="#ecuac_elip">Elipse</a></li>
+                    <li><a href="#hiperbole">Hipérbole</a></li>
+                </ul>
+            </li>
+            <li class="li_"><a class="li_" href="Fisica.html">FÍSICA</a>
+                <ul>
+                </ul>
+            </li>
+
+            <li class="li_"><a class="li_" href="Quimica.html">QUÍMICA</a>
+                <ul>
+                </ul>
+            </li>
+        </ul>
+    </div> 
+    
+    
+    
+    
+    
+    
+    <div class="port">
+        <img src="Galería/principal/port_trig_img.png">
+    </div>
+
+
+
+
+    <div class="div_filter">
+        <a><ins>CONTENIDO</ins></a><br>
+        <div>
+            <div>
+                <input type="text" class="input_filter" id="input_filter" onkeyup="filter()" placeholder="search">
+            </div>
+            <div>
+                <ul class="list" id="list">
+                    <li><a href="#sist_medidas">Sistema de medidas angulares</a></li>
+                    <li><a href="#Triang_Notab">Triángulos notables</a></li>
+                    <li><a href="#RT_Ag">Razones trigonométricas de ángulos agudos</li>
+                    <li><a href="#RT_Cua">Razones trigonométricas de ángulos cuadrantales/li>
+                    <li><a href="#circun">Circunferencia trigonométrica</a></li>
+                    <li><a href="#1">Identidades trigonométricas básicas</a></li>
+                    <li><a href="#2">Identidades trigonométricas auxiliares</a></li>
+                    <li><a href="#3">Identidades trigonométricas de ángulo compuesto</a></li>
+                    <li><a href="#4">Identidades trigonométricas de ángulo mitad</a></li>
+                    <li><a href="#5">Identidades trigonométricas de ángulo doble</a></li>
+                    <li><a href="#6">Identidades trigonométricas de ángulo triple</a></li>
+                    <li><a href="#Trans_Trigo">Transformaciones trigonométricas</a></li>
+                    <li><a href="#triang_obli_I">Triángulos oblicuángulos</a><a> (Se divide en 5 partes)</a></li>
+                    <li><a href="#funcion_1">Funciones (parte I)</a></li>
+                    <li><a href="#funcion_2">Funciones (parte II)</a></li>
+                    <li><a href="#funcion_aux">Funciones auxiliares</a></li>
+                    <li><a href="#funcion_inv">Funciones inversas (arcos)</a></li>
+                    <li><a href="#ecua">Ecuaciones trigonométricas</a></li>
+                    <li><a href="#cuadrilateros">Cuadriláteros</a></li>
+                    <li><a href="#ecuac_Rect">Ecuación de recta</a></li>
+                    <li><a href="#ecuac_circunf">Ecuación de circunferencia</a></li>
+                    <li><a href="#ecuac_parab">La parábola</a></li>
+                    <li><a href="#ecuac_elip">La elipse</a></li>
+                    <li><a href="#hiperbole">La hipérbole</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <button id="sist_medidas"><ins>SISTEMA DE MEDIDAS ANGULARES</ins></button>
+        <div class="clas_sist_medidas">
+            <div>
+                <button id="sist_medidas_">Centesimales</button>
+                <div><img src="Galería/Trig/sist_cente.png"></div>
+                
+            </div>
+            
+            <div>
+                <button id="sist_medidas_">Sexagesimales</button>
+                <div><img src="Galería/Trig/sis_sexag.png"></div>
+            </div>
+            <div>
+                <button id="sist_medidas_">Radianes</button>
+                <div><img src="Galería/Trig/sist_rad.png"></div>
+            </div>
+            
+        </div>
+        <button id="sist_medidas"><ins>FÓRMULA GENERAL</ins></button>
+        <div>
+            <img src="Galería/Trig/sist.png">
+            <div>
+                <label class="text_1"for="AngS">SEXAGESIMALES: </label><input class="text_2"name="AngS" id="AngS"><button onclick="onclick_convert_AngS()">Convertir</button><br>
+                <a class="text_1">CENTESIMALES: </a><a id="AngS_C" class="text_2"></a><br>
+                <a class="text_1">RADIALES: </a><a id="AngS_R" class="text_2"></a><br>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <button id="Triang_Notab"><ins>TRIÁNGULOS NOTABLES</ins></button>
+        <div>
+            <img src="Galería/Trig/Triang.png">
+    </div>
+
+    <div>
+        <button id="RT"><ins>RAZONES TRIGONOMÉTRICAS</ins></button>
+        <div>
+            <button id="RT_Ag">-Ángulos Notables</button>
+            <div><img src="Galería/Trig/RT_Ag.png"></div>
+        </div>
+        <div>
+            <button id="RT_Cua">-Ángulos Cuadrantales</button>
+            <div><img src="Galería/Trig/RT_Cua.png"></div>
+        </div>
+    </div>
+
+    <div>
+        <button id="circun"><ins>CIRCUNFERENCIA</ins></button>
+        <div>
+            <img src="Galería/Trig/Circunf_RT.png">
+        </div>
+        <button>==>OJO:</button>
+        <div><img src="Galería/Trig/Circunf.png"></div>
+    </div>
+
+    <div>
+        <button id="IT"><ins>IDENTIDADES TRIGONOMÉTRICAS</ins></button>
+        
+
+        <div>
+            <button class="text_1" id="1">-Básicas</button>
+            <div><img src="Galería/Trig/IdenTrigPrin.png"></div>
+
+            <button class="text_1" id="2">-Auxiliares</button>
+            <div><img src="Galería/Trig/IdenTrigAux.png"></div>
+        </div>
+
+        <div>
+            <button class="text_1" id="3">-Ángulo Compuesto</button>
+            <div><img src="Galería/Trig/IdenTrigComp.png"></div>
+        </div>
+
+        <div>
+            <button class="text_1" id="4">-Ángulo Mitad</button>
+            <div><img src="Galería/Trig/IdenTrigmd.png"></div>
+        </div>
+
+        <div>
+            <button class="text_1" id="5">-Ángulo Doble</button>
+            <div><img src="Galería/Trig/IdenTrigDob.png"></div>
+        </div>
+
+        <div>
+            <button class="text_1" id="6">-Ángulo Triple</button>
+            <div><img src="Galería/Trig/IdenTrigTrip.png"></div>
+        </div>
+    </div>
+
+    <div>
+        <button id="triang_obli_I"><ins>TRIÁNGULO OBLICUÁNGULO I</ins></button>
+        <div><img src="Galería/Trig/triang_obli_1.png"></div>
+    </div>
+    <div>
+        <button id="triang_obli_II"><ins>TRIÁNGULO OBLICUÁNGULO II</ins></button>
+        <div><img src="Galería/Trig/triang_obli_2.png"></div>
+    </div>
+    <div>
+        <button id="triang_obli_III"><ins>TRIÁNGULO OBLICUÁNGULO III (área de triángulo)</ins></button>
+        <div><img src="Galería/Trig/triang_obli_3.png"></div>
+    </div>
+    <div>
+        <button id="triang_obli_IV"><ins>TRIÁNGULO OBLICUÁNGULO IV (mediana y bisectrices)</ins></button>
+        <div><img src="Galería/Trig/triang_obli_4.png"></div>
+    </div>
+    <div>
+        <button id="triang_obli_IV"><ins>TRIÁNGULO OBLICUÁNGULO V (radio exterior) </ins></button>
+        <div><img src="Galería/Trig/triang_obli_5.png"></div>
+    </div>
+
+
+    <div>
+        <button id="Trans_Trigo"><ins>TRANSFORMACIONES TRIGONOMÉTRICAS</ins></button>
+        <div>
+            <img src="Galería/Trig/Trans_Trig_1.png">
+            <img src="Galería/Trig/Trans_Trig_2.png">
+        </div>
+    </div>
+    
+    <div>
+        <button id="funcion_1"><ins>FUNCIONES TRIGONOMÉTRICAS</ins></button>
+
+        <div><button id="funcion_sen">FUNCIÓN SENO</button></div>
+        <div><img src="Galería/Trig/funcion_seno.png"></div>
+
+        <button id="funcion_cos">FUNCIÓN COSENO</button>
+        <div><img src="Galería/Trig/funcion_coseno.png"></div>
+
+        <button id="funcion_tan">FUNCIÓN TANGENTE</button>
+        <div><img src="Galería/Trig/funcion_tangente.png"></div>
+
+        <button id="funcion_cot">FUNCIÓN COTANGENTE</button>
+        <div><img src="Galería/Trig/funcion_cotangente.png"></div>
+
+        <button id="funcion_Sec">FUNCIÓN SECANTE</button>
+        <div><img src="Galería/Trig/funcion_secante.png"></div>
+
+        <button id="funcion_csc">FUNCIÓN COSECANTE</button>
+        <div><img src="Galería/Trig/funcion_cosecante.png"></div>
+    </div>
+
+    <div>
+        <button id="funcion_2"><ins>FUNCIÓN II</ins></button>
+        <div><img src="Galería/Trig/función_II.png"></div>
+    </div>
+
+    <div>
+        <button id="funcion_aux"><ins>FUNCIONES AUXILIARES</ins></button>
+        <div><img src="Galería/Trig/funciones_III.png"></div>
+    </div>
+
+    <div>
+        <button id="funcion_inv"><ins>FUNCIONES INVERSAS</ins></button>
+        <div class="text_2">Como su mismo nombre lo indica, los arc(F.T) son las inversas de la F.T, donde F.T ==> Función Trigonométrica</div>
+        <div class="text_1">EJEMPLOS</div>
+        <div><img src="Galería/Trig/arco.png"></div>
+    </div>
+
+    <div>
+        <button id="ecua"><ins>ECUACIONES TRIGONOMÉTRICAS</ins></button>
+        <div><img src="Galería/Trig/Ecuacion trig.png"></div>
+    </div>
+
+
+    <div>
+        <button id="cuadrilateros"><ins>CUADRILÁTEROS</ins></button>
+        <div><img src="Galería/Trig/cuadrilatero.png"></div>
+        <div><a class="text_1">CUADRILÁTERO INSCRIPTIBLE</a></div>
+        <div><a class="text_2">Es aquel cuadrilátero que puede estar dentro de una circunferencia</a></div>
+        <div><a class="text_2">OJO: "P" es semiperímetro</a></div>
+        <div><img src="Galería/Trig/cuadrilatero_inscrip.png"></div>
+        <div><a class="text_1">CUADRILÁTERO CIRCUNSCRIPTIBLE</a></div>
+        <div><a class="text_2">Es aquel cuadrilátero que está dentro de una circunferencia</a></div>
+        <div><img src="Galería/Trig/cuadrilatero_circunscriptible.png"></div>
+        <div><a class="text_1">CUADRILÁTERO BICÉNTRICO</a></div>
+        <div><a class="text_2">Es aquel cuadrilátero que es incriptible y circunscriptible a la vez</a></div>
+        <div><img src="Galería/Trig/cuadrilatero_bicentrico.png"></div>
+    </div>
+
+
+    <div>
+        <button id="ecuac_Rect"><ins>ECUACIÓN DE UNA RECTA</ins></button>
+        <div><img src="Galería/Trig/Ecuac_Rect.png"></div>
+        <div><img src="Galería/Trig/Ecuac_Rect_.png"></div>
+    </div>
+
+
+    <div>
+        <button id="ecuac_circunf"><ins>LA CIRCUNFERENCIA</ins></button>
+        <div><img src="Galería/Trig/ecuac_circunf.png"></div>
+        <div><a class="text_1">FORMA GENERAL</a></div>
+        <div><img src="Galería/Trig/ecuac_circunf_.png"></div>
+    </div>
+
+
+    <div>
+        <button id="ecuac_parab"><ins>LA PARÁBOLA</ins></button>
+        <div><img src="Galería/Trig/parabola.png"></div>
+    </div>
+    
+
+    <div>
+        <button id="ecuac_elip"><ins>LA ELIPSE</ins></button>
+        <div><img src="Galería/Trig/elipse.png"></div>
+    </div>
+
+
+    <div>
+        <button id="hiperbole"><ins>LA HIPÉRBOLE</ins></button>
+        <div><img src="Galería/Trig/hiperbole.png"><br><img src="Galería/Trig/hiperbole_ecuac.png"></div>
+    </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

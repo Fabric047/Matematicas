@@ -1,0 +1,656 @@
+body{
+    padding: 10px;
+    margin:10px;
+    background-color: #CEE1F2 ;
+}
+
+
+
+.port{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    height: 800px;
+    flex-wrap: wrap;
+}
+.port img{
+    width: 80%;
+    height: 90%;
+}
+.port div{
+    position: absolute;
+    width: 80%;
+    height: 90%;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.text-animation_pr{
+    font-size: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #0000FE;
+    border-right: 3px solid transparent;
+    animation: typing 3s steps(14) infinite, blink-caret .5s step-end infinite;
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }to{
+        width: 74%;
+    }
+}
+@keyframes blink-caret{
+    from, to{
+        border-color: blue;
+    } 50%{
+        border-color:  red;
+    }
+}
+
+
+
+.div_filter{
+    display: block;
+    justify-content: center;
+}
+.div_filter div{
+    margin: 10px;
+    background-color: #aec6db;
+    padding: 0.1px;
+    border-radius: 5px;
+    width: 90%;
+}
+.div_filter a ins{
+    font-size: 35px;
+    font-weight: 600;
+    color: red;
+    margin-left: 10px;
+}
+.input_filter{
+    margin-top: 10px;
+    height: 15px;
+    border-radius: 9px;
+    padding: 8px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+.list li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    font-family: arial;
+}
+
+
+
+
+
+
+
+.clas_1{
+    display: flex;
+    background: blue;
+    padding-top: 0px;
+    margin:0px;
+    flex-wrap: wrap;
+    box-shadow: 0 0 25px rgb(0, 0, 0);
+}
+.clas_1 div img{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.menu{
+    margin: auto;
+    width: 1200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul, ol{
+    list-style: none;
+}
+.menu li a{
+    background-color: blue;
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 7px;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+.menu li a:hover{
+    border-radius: 7px;
+    background-color: rgb(7, 149, 237);
+    color: black;
+    box-shadow: 0 0 10px #00aeff;
+}
+button {
+    cursor: pointer;
+    padding-top: 20px;
+    background-color: transparent;
+    border: none;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 30px;
+}
+button ins{
+    color:white;
+    padding: 10px;
+    margin: -5px;
+    background: linear-gradient(to right, blue, rgb(8, 158, 218));
+    box-shadow: 0 0 10px #099ceb;
+    cursor: pointer;
+}
+.menu > li{
+    float: left;
+}
+.menu li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.menu li:hover > ul{
+    display: block;
+    padding: 0px;
+}
+.menu li ul li{
+    position: relative;
+}
+.menu li ul li ul{
+    right: 250px;
+    top:0px;
+}
+
+.divgriedpr{
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+.area {
+    position: relative;
+    width: 439px;
+    height: 560px;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+.area .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+    font-size: 25px;
+}
+
+.area .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+
+.area .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.area .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #ffffff;
+    background: black; 
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+}
+.curs{
+    color:rgb(88, 208, 238);
+    font-size: 20px;
+    font-weight: 600px;
+}
+
+.area .back {
+    transform: perspective(600px) rotateY(180deg);
+    background-color: #8DA9D4;
+    padding: 15px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+.content_curs_1{
+    text-align: left;
+    justify-content: center;
+    padding-top: 50px;
+}
+.content_curs_2{
+    text-align: left;
+    justify-content: center;
+    padding-top: 0px;
+}
+.content_curs_3{
+    text-align: left;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.area .back .link {
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.area .back .link a {
+    color: #f3f3f3;
+}
+.curs{
+    color: darkblue;
+    font-weight: 600;
+}
+.area .back a{
+    font-size: 20px;
+    letter-spacing: 0px;
+    text-decoration: none;
+}
+.area .back a ins {
+    font-size: 32px;
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+    color: black;
+    font-weight: 700;
+}
+
+.area .back p {
+    letter-spacing: 1px;
+} 
+
+.area:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+.area:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+.div_text_pr{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.div_text_pr input{
+    font-size: 35px;
+    font-weight: 500;
+
+}
+.text_1{
+    font-size: 28px;
+    font-weight: 600;
+    color: rgb(167, 41, 3);
+}
+.text_2{
+    font-size: 25px;
+    font-weight: 400;
+    color: black
+}
+/* CALCULADORA */
+#button_calc{
+    display: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    color:white;
+    padding: 10px;
+    background: linear-gradient(to right, darkred, red);
+    font-size: 30px;
+    font-weight: 700;
+    animation: animation 3s ease infinite
+}
+#content_calc{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 450px;
+    height: 310px;
+    background-color:  #CEE1F2;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+@keyframes animation{
+    0%{
+        transform: translate(calc(100vw-100px));
+    }
+    33.3%{
+        transform: translate(calc(100vw-100px));
+    }
+    66.6%{
+        text-shadow: 5px 5px 4px #000000;
+    }
+    100%{
+        transform: translate(calc(100vw-100px));
+    }
+}
+.calculator {
+    max-width: 250px;
+    max-height: 450px;
+    text-align: center;
+    background-color: #0000FE;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: #000000 15px 10px;
+}
+.div_text{
+    font-size: 24px;
+    width: 250px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 5px;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-gap: 5px;
+    margin-top: 10px;
+}
+.btn{
+    border-radius: 10px;
+    height: 50px;
+    width: 55px;
+    background-color: #CEE1F2;
+    font-size: 20px;
+}
+
+
+
+.library{
+    margin-left: 83%;
+    margin-top: 1px;
+    position: absolute;
+    background-color: transparent;
+}
+.library a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    background: linear-gradient(to right, rgb(114, 0, 0), red);
+    border-radius: 20px;
+    padding: 12px;
+    cursor: pointer;
+    
+}
+.library:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: tab_quim_style 1s infinite alternate;
+}
+
+
+
+
+.tab_quim{
+    margin-left: 83%;
+    margin-top: 1px;
+    background: linear-gradient(to right, red, rgb(241, 238, 6));
+    position: absolute;
+}
+.tab_quim a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    background: linear-gradient(to right, red, rgb(241, 238, 6));
+    padding: 10px;
+    cursor: pointer;
+    
+}
+.tab_quim:hover {
+    background-color: #2980b9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: tab_quim_style 1s infinite alternate;
+}
+
+
+
+
+
+.contenedor_tab_quim{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    height: 800px;
+    flex-wrap: wrap;
+}
+
+.tabla_quim{
+    padding: .5%;
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(18,5%);
+    gap: 10px;
+    background-color: white;
+}
+.tabla_quim_div{
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    padding: 2px; 
+    background: linear-gradient(to right, rgb(8, 158, 218), rgb(108, 207, 247), rgb(8, 158, 218));
+    font-weight: 600;
+}
+.tab_quim_title{
+    font-size: 65px; 
+    color: red; 
+    font-weight: 800; 
+    text-align: center; 
+    text-align: center;
+}
+.tabla_quim_div_number{
+    font-size: 18px;
+}
+.tabla_quim_div_simbolo{
+    text-align: center; font-size: 28px;
+}
+.tabla_quim_div_name{
+    text-align: center; font-size: 18px;
+}
+
+/* contenedor química inorgánica */
+.tooltip{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid black; 
+    padding: 10px; 
+    background-color: blue; 
+    color: white; 
+    width: 100%;
+}
+.tooltiptext {
+    font-size: 25px;
+    color:black;
+    visibility: hidden;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+    cursor: auto;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+  
+
+/* tooltip */
+.contenedor_tooltip_default {
+    padding: 10px;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 0%;
+    margin-left: -280px;
+    display: flex;
+    flex-direction: column;
+    width: 280px; height: 300px;
+    background-color: #8DA9D4;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 4px 4px rgb(0, 0, 0);
+}
+.tabla_quim_div:hover .contenedor_tooltip_default{
+    visibility: visible;
+}
+.contenedor_tooltip_left{
+    padding: 10px;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 0%;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    width: 280px; height: 300px;
+    background-color: #8DA9D4;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 4px 4px rgb(0, 0, 0);
+}
+.tabla_quim_div:hover .contenedor_tooltip_left{
+    visibility: visible;
+}
+.contenedor_tooltip_top{
+    padding: 10px;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    margin-top: 90px;
+    margin-left: -280px;
+    display: flex;
+    flex-direction: column;
+    width: 280px; height: 300px;
+    background-color: #8DA9D4;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 4px 4px rgb(0, 0, 0);
+}
+.tabla_quim_div:hover .contenedor_tooltip_top{
+    visibility: visible;
+}
+.contenedor_tooltip_left_top{
+    padding: 10px;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    margin-top: 90px;
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    width: 280px; height: 300px;
+    background-color: #8DA9D4;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 4px 4px rgb(0, 0, 0);
+}
+.tabla_quim_div:hover .contenedor_tooltip_left_top{
+    visibility: visible;
+}
+
+
+.element_name{
+    margin-top: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+.element_type{
+    font-size: 20px;
+}
+.element_info{
+    font-size: 20px;
+    color: blue;
+}
+.element_image{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.element_image img{
+    display: flex;
+    margin-top: 10px;
+    width: 250px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+.div_filter_element{
+    display: block;
+    justify-content: center;
+}
+.div_filter_element {
+    margin: 10px;
+    background-color: #aec6db;
+    padding: 0.1px;
+    border-radius: 5px;
+    width: 90%;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+.div_subtitles_element{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.list_element {
+    font-size: 30px;
+}
+.div_filter_element a ins{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(182, 29, 29);
+    margin-left: 10px;  
+}
+.list_element li a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    font-family: arial;
+}
+
+
+@keyframes tab_quim_style {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}  

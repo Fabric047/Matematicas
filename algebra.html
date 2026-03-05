@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kriptobyte: Álgebra</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="icon" href="Galería/principal/Logo_Windows.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+    <script>
+        const open_modal = document.querySelector("#open_modal");
+        const closed_modal = document.querySelector("#closed_modal");
+        const modal = document.querySelector("#modal");
+
+        open_modal.addEventListener("click",()=>{
+            modal.showModal();
+        })
+
+        closed_modal.addEventListener("click",()=>{
+            modal.close();
+        })
+
+    </script>
+
+
+
+    <div class="clas_1">
+        <div>
+            <a href="main.html"><img class="logo" src="Galería/principal/Logo.png" width="250", height="40"></a>
+        </div>
+
+        <ul class="menu">
+
+            <li class="li_"><a class="li_" href="algebra.html">ÁLGEBRA</a>
+                <ul>
+                    <li><a href="#product_notab">Productos notables</a></li>
+                    <li><a href="#proposiciones">Proposiciones</a></li>
+                    <li><a href="#polinomios">Polinomios</a>
+                        <ul>
+                            <li><a href="#polinomio_especial">Especiales</a></li>
+                            <li><a href="#polinomio_operaciones">Operaciones con grados</a></li>
+                            <li><a href="#polinomio_div">División</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#exp">Ley de exponentes</a></li>
+                    <li><a href="#raiz">ley de radicales</a></li>
+                    <li><a href="#radicales">Radicales dobles</a></li>
+                    <li><a href="#ecu_lin">Ecuación lineal</a></li>
+                    <li><a href="#ecu_cuad">Ecuación cuadrática</a></li>
+                    <li><a href="#ecu_bicuad">Ecuación bicuadrática</a></li>
+                    <li><a href="#funciones">Funciones</a>
+                        <ul>
+                            <li><a href="#func_tip">Tipos___________</a></li>
+                            <li><a href="#func_tecn_grafic">Técnicas de graficación</a></li>
+                            <li><a href="#composición">Conposición_______</a></li>
+                            <li><a href="#func_inv">Función Inversa_______</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#log">Logarítmos</a></li>
+                    <li><a href="#matrices">Matrices</a>
+                        <ul>
+                            <li><a href="#type_matrices">Tipos de matrices_____</a></li>
+                            <li><a href="#T">Transpuesta_____</a></li>
+                            <li><a href="#Traz">Traza de una matriz____</a></li>
+                            <li><a href="#Det">Determinantes____</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#sist_ecuac">Sistema de ecuaciones</a>
+                        <ul>
+                            <li><a href="#sist_form">Forma del sistema_____</a></li>
+                            <li><a href="#type_sist_ecuac">Tipos de sistemas_____</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#prog_lin">Programación lineal</a></li>
+                    <li><a href="#lim">Límites</a></li>
+                </ul>
+            </li>
+            
+            <li class="li_"><a class="li_" href="Geometria.html">GEOMETRÍA</a>
+                <ul>
+                </ul>
+            </li>
+
+            <li class="li_"><a class="li_" href="Trigonometria.html">TRIGONOMETRÍA</a>
+                <ul>
+                </ul>
+            </li>
+            <li class="li_"><a class="li_" href="Fisica.html">FÍSICA</a>
+                <ul>
+                </ul>
+            </li>
+
+            <li class="li_"><a class="li_" href="Quimica.html">QUÍMICA</a>
+                <ul>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="port">
+        <img src="Galería/principal/port_alg_img.png">
+    </div>
+
+    
+    <div class="div_filter">
+        <a><ins>CONTENIDO</ins></a><br>
+        <div>
+            <div>
+                <input type="text" class="input_filter" id="input_filter" onkeyup="filter()" placeholder="search">
+            </div>
+            <div>
+                <ul class="list" id="list">
+                    <li><a href="#product_notab">Productos notables</a></li>
+                    <li><a href="#proposiciones">Proposiciones</a></li>
+                    <li><a href="#polinomios">Polinomios</a></li>
+                    <li><a href="#exp">Leyes de exponentes</a></li>
+                    <li><a href="#raiz">Leyes de radicales</a></li>
+                    <li><a href="#radicales">Radicales dobles</a></li>
+                    <li><a href="#ecu_lin">Ecuaciones lineales</a></li>
+                    <li><a href="#ecu_cuad">Ecuaciones cuadráticas</a></li>
+                    <li><a href="#ecu_bicuad">Ecuaciones bicuadráticas</a></li>
+                    <li><a href="#funciones">Funciones</a></li>
+                    <li><a href="#log">Logaritmos</a></li>
+                    <li><a href="#matrices">Matrices</a></li>
+                    <li><a href="#Det">Determinantes</a></li>
+                    <li><a href="#sis_ecuac">Sistema de ecuaciones </a></li>
+                    <li><a href="#prog_lin">Programación lineal</a></li>
+                    <li><a href="#lim">Límites</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <button id="product_notab"><ins>PRODUCTOS NOTABLES</ins></button>
+        <div><img src="Galería/Alg/product_notab.png"></div>
+    </div>
+
+
+    <div>
+        <button id="proposiciones"><ins>PROPOSICIONES</ins></button>
+        <div><img src="Galería/Alg/proposiciones.png"></div>
+    </div>
+
+
+    <div>
+        <button id="polinomios"><ins>POLINOMIOS</ins></button>
+        <div><a class="text_2">Puede ser de una o más variables(x,y,z...) y sus exponentes siempre serán racionales enteros positivos</a></div>
+        <div><a class="text_2">Se pueden presentar como por ejemplo de la siguiente manera</a></div>
+        <div><img src="Galería/Alg/polinomio_1.png"></div>
+        <div><a class="text_1">GRADO ABSOLUTO(mayor suma de exponentes de un polinomio) Y GRADO RELATIVO(el mayor exponenete de una variable)</a></div>
+        <div><img src="Galería/Alg/polinomio_2.png"></div>
+        <div id="polinomio_especial"><a class="text_1">POLINOMIOS ESPECIALES</a></div>
+        <div><img src="Galería/Alg/polinomio_3.png"></div>
+        <div id="polinomio_operaciones"><a class="text_1">OPERACIONES CON GRADOS</a></div>
+        <div><img src="Galería/Alg/polinomio_4.png"></div>
+        <div id="polinomio_div"><a class="text_1">DIVISIÓN DE POLINOMIOS</a></div>
+        <div><img src="Galería/Alg/polinomio_div.png"></div>
+    </div>
+
+
+    <div>
+        <button id="exp"><ins>PROPIEDADES DE LOS EXPONENTES</ins></button>
+        <div><img src="Galería/Alg/exp.png"></div>
+    </div>
+
+
+    <div>
+        <button id="raiz"><ins>PROPIEDADES DE RADICALES</ins></button>
+        <div><img src="Galería/Alg/raíz.png"></div>
+    </div>
+
+
+    <div>
+        <button id="radicales"><ins>RADICALES DOBLES</ins></button>
+        <div><a class="text_1">1° FORMA</a></div>
+        <div><img src="Galería/Alg/radicales dobles.png"></div>
+        <div><a class="text_1">2° FORMA</a></div>
+        <div><img src="Galería/Alg/radicales dobles_1.png"></div>
+        <div><a class="text_2">Se buscan 2 números que sumados me den 8 y que multiplicados me den 15.</a></div>
+        <div><img src="Galería/Alg/radicales dobles_2.png"></div>
+    </div>
+
+
+    <div>
+        <button id="ecu_lin"><ins>ECUACIÓN LINEAL</ins></button>
+        <div><a class="text_1">FORMA:  ax = b </a></div>
+        <div><a class="text_2">1° Si a≠0, única solución (compatible determinada)</a></div>
+        <div><a class="text_2">2° Si a = b = 0, tiene infinitas soluciones (compatible indeterminada)</a></div>
+        <div><a class="text_2">3° Si a≠b y b=0, no tiene solución (incompatible)</a></div>
+    </div>
+
+
+    <div>
+        <button id="ecu_cuad"><ins>ECUACIÓN CUADRÁTICA</ins></button>
+        <div><a class="text_2">Solo tiene dos raíces (dos valores que puede tomar x), aunque estos pueden ser iguales</a></div>
+        <div><img src="Galería/Alg/ecua_cuad.png"></div>
+    </div>
+
+
+    <div>
+        <button id="ecu_bicuad"><ins>ECUACIÓN BICUADRÁTICA</ins></button>
+        <div><a class="text_2">Tiene cuatro raíces (si por ejemplo dos raíces salen 4 y 5, entonces las otras dos restantes sería -4, -5), aunque estos pueden ser iguales</a></div>
+        <div><img src="Galería/Alg/ecua_bicuad.png"></div>
+    </div>
+
+
+    <div>
+        <button id="funciones"><ins>FUNCIONES</ins></button>
+        <div><a class="text_2">Una función es una relación entre dos magnitudes, de tal manera que a cada valor de la primera (X) le corresponde un valor de la segunda  llamada Y.</a></div>
+        <div><img src="Galería/Alg/par_ordenado.png"></div>
+        <div><img src="Galería/Alg/funcion_ejem_1.png"></div>
+        <div id="func_tip"><button>TIPOS DE FUNCIONES</button></div>
+        <div><img src="Galería/Alg/funciones.png"></div> 
+        <div id="func_tecn_grafic"><button>TÉCNICAS DE GRAFICACIÓN DE UNA FUNCIÓN</button></div>
+        <div><img src="Galería/Alg/func_1.png"></div>
+        <div><img src="Galería/Alg/func_2.png"></div>
+        <div><img src="Galería/Alg/func_3.png"></div>
+        <div><img src="Galería/Alg/func_4.png"></div>
+        <div><img src="Galería/Alg/func_5.png"></div>
+        <div><img src="Galería/Alg/func_6.png"></div>
+        <div id="composición"><button>COMPOSICIÓN</button></div>
+        <div><a class="text_2">La composición de funciones es una operación matemática que combina dos o más funciones para crear una nueva función. Se denota mediante el símbolo de composición de funciones, que generalmente es un pequeño círculo (∘) o simplemente escribiendo las funciones una después de la otra.</a></div>
+        <div><img src="Galería/Alg/composición.png"></div>
+        <div id="func_inv"><button>FUNCIÓN INVERSA</button></div>
+        <div><img src="Galería/Alg/func_inv.png"></div>
+    </div>
+
+
+    <div>
+        <button id="log"><ins>LOGARÍTMOS</ins></button>
+        <div><img src="Galería/Alg/Log.png"></div>
+    </div>
+
+
+    <div>
+        <button id="matrices"><ins>MATRICES</ins></button>
+        <div><img src="Galería/Alg/matrices_forma.png"></div>
+        <div><button id="T">TRANSPUESTA DE UNA MATRIZ</button></div>
+        <div><a class="text_2">La primera columna se convierte en la primera fila, la segunda columna se convierte en la segunda fila y así sucesivamente.</a></div>
+        <div><img src="Galería/Alg/matrices_transpuesta.png"></div>
+        <div><button id="Traz">TRAZA DE UNA MATRIZ</button></div>
+        <div><img src="Galería/Alg/matrices_trazo.png"></div>
+        <div><button id="type_matrices">TIPOS DE MATRICES</button></div>
+        <div><img src="Galería/Alg/matrices_type.png"></div>
+        <div><button id="Det">DETERMINANTES</button></div>
+        <div><img src="Galería/Alg/determinantes.png"></div>
+    </div>
+
+
+    <div>
+        <button id="sist_ecuac"><ins>SISTEMA DE ECUACIONES</ins></button>
+        <div><button id="sist_form">FORMA DEL SISTEMA</button></div>
+        <div><img src="Galería/Alg/sist_ecuac_form.png"></div>
+        <div><button id="type_sist_ecuac">TIPOS DE SISTEMAS DE ECUACIONES</button></div>
+        <div><img src="Galería/Alg/sist_ecuac.png"></div>
+    </div>
+
+
+    <div>
+        <button id="prog_lin"><ins>PROGRAMACIÓN LINEAL</ins></button>
+        <div>
+            <a class="text_2">Un problema de programación lineal (PPL) consiste en maximizar o minimizaruna función de dos variables de la forma: f(x,y) = mx + ny</a><br><img src="Galería/Alg/ppl_1.png">
+        </div>
+        <div>
+            <a class="text_1">EJEMPLO DE PROGRAMACIÓN LINEAL</a><br><img src="Galería/Alg/ppl_2.png">
+        </div>
+    </div>
+
+
+    <div>
+        <button id="lim"><ins>LÍMITES</ins></button><br><br><br>
+        <img src="Galería/Alg/limites.png">
+        
+    </div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
